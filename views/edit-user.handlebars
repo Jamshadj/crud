@@ -1,0 +1,21 @@
+<style>
+  label{
+    margin-bottom: 1em;
+  }
+  input{
+    margin-bottom: 1em;
+  }
+</style>
+<div class="container text-center">
+ <h3 style="margin-bottom: 3em;">EDIT DETAILS</h3>
+  <div >
+  <form action="/admin/update-user/{{user._id}}" method="post">
+  <label for="">Name</label><br>
+  <input type="text" name="name" placeholder="Enter new name" value='{{user.name}}'><br><br>
+  <label for="">E-mail id</label><br>
+  <input type="text" name="email" placeholder="Enter new E-mail id" value="{{user.email}}"><br><br><br>
+  <button type="submit" class="btn-success btn-rounded">Submit</button>
+
+</div>
+</form>
+ </div>
